@@ -12,16 +12,13 @@ return(
 <h2>Hello Guys</h2>
 <button>Login</button>
 <Btn  />
-<Btn  />
+
 
 {/* Every Tag Should must be closed */}
 <label>username</label>
 <input    />
 <Btn  />
-<Btn  />
 
-<Btn  />
-<Btn  />
 
 
 </div>
