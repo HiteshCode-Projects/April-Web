@@ -85,20 +85,38 @@
 // export default App
 
 
-//Example 3 : SHow/Hide password
+// //Example 3 : SHow/Hide password
+
+// import { useState } from "react";
+
+// function App(){
+// const [show , setShow] = useState(false)
+
+
+//   return(
+//     <div>
+           
+//             <input type= {show ? "text" : "password"   }    placeholder="Enter Your Password" />
+
+//             <button onClick={  ()=> setShow(!show)  }>Show/Hide</button>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+//example 4 Follow Following
 
 import { useState } from "react";
 
 function App(){
-const [show , setShow] = useState(false)
 
+const [follow , setFollow ] = useState(false)
 
   return(
     <div>
-           
-            <input type= {show ? "text" : "password"   }    placeholder="Enter Your Password" />
-
-            <button onClick={  ()=> setShow(!show)  }>Show/Hide</button>
+      <button  onClick={ ()=>  setFollow(!follow)   }> {follow ? "Following"  : "Follow"}   </button>
     </div>
   )
 }
