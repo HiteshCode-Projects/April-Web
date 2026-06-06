@@ -18,7 +18,7 @@ function App(){  //Main Function - Output
         <BrowserRouter>
         
         <nav>
-            <Link to="/" >Home / Amazon</Link> | |
+            <Link to="/" >Home</Link>  
             <Link to="/about">About Us⚡</Link>
         </nav>
 
