@@ -10,8 +10,8 @@
     <h1>Login</h1>
 
     <form id="loginForm">
-          Name:<input type="text" id="name" required>
-          Email:<input type="email" id="email" required>
+          Name:<input type="text" id="name" >
+          Email:<input type="email" id="email" >
           <button type="submit">Submit</button>
     </form>
 
@@ -35,6 +35,24 @@
 
             //      body:  Value of Data Whihc you want to send To Server {name , email}
             // })
+
+
+            fetch('http://localhost:3000/login',{
+                method:'POST',
+                headers:{
+                    'Content-Type':'application/json'
+                },
+
+                body: JSON.stringify({name,email})
+            })
+
+            .then(response => response.json())
+            .then(data =>{
+                document.getElementById("resMsg").textContent = data.message + " " + data.loginTime
+            })
+
+
+            .catch(error => console.error('Error ' , error))
 
        })
 
